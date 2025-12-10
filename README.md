@@ -13,30 +13,42 @@ A modern REST API for managing and planning focused work sessions.
 ```bash
 git clone https://github.com/100472330/TIMEWISE.git
 cd TIMEWISE
-
+```
 2. **Create a virtual environment:**
+```bash
 python -m venv .venv
 source .venv/bin/activate  # on macOS/Linux
 # or on Windows:
 # .venv\Scripts\activate
-
+```
 3. **Install Dependencies:**
+```bash   
 pip install -r requirements.txt
-
-**## Running the Application**
+```
+## Running the Application
+```bash
 From the project root: uvicorn backend.app.main:app --reload
 The API will be available at http://127.0.0.1:8000
-
+```
 Available Endpoints
 GET /health - Check API health status
+```bash
 curl http://127.0.0.1:8000/health
+```
 Response: {"status":"ok"}
 
-**## Running Tests**
-From the project root: pytest -q
-For verbose output: pytest -v
+## Running Tests
+From the project root:
+```bash
+pytest -q
+```
+For verbose output:
+```bash
+pytest -v
+```
 
-**## PROJECT STRUCTURE**
+## PROJECT STRUCTURE
+```bash
 .
 ├── backend/
 │   ├── __init__.py
@@ -49,14 +61,17 @@ For verbose output: pytest -v
 ├── requirements.txt              # Project dependencies
 ├── .gitignore                    # Git ignore rules
 └── README.md                     # This file
+```
+## MAIN DEPENDENCIES
+· FastAPI - Modern, fast web framework for building APIs
 
-**## MAIN DEPENDENCIES**
-FastAPI - Modern, fast web framework for building APIs
-Uvicorn - ASGI web server implementation
-Pytest - Testing framework
-HTTPx - HTTP client for testing
+· Uvicorn - ASGI web server implementation
 
-**## DEVELOPMENT**
+· Pytest - Testing framework
+
+· HTTPx - HTTP client for testing
+
+## DEVELOPMENT
 To contribute to the project:
 
 Create a feature branch: git checkout -b feature/my-feature
@@ -64,10 +79,10 @@ Commit your changes: git commit -am 'Add my feature'
 Push to the branch: git push origin feature/my-feature
 Open a Pull Request
 
-**## LICENCE**
+## LICENCE
 This project is licensed under the MIT License.
 
-**## AUTHOR**
+## AUTHOR
 Maria Romero Martin
 
 
