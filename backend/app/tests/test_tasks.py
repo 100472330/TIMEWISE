@@ -1,10 +1,5 @@
-from fastapi.testclient import TestClient
-from backend.app.main import app
-
-client = TestClient(app)
-
-
-def test_tasks_crud_flow():
+#TEST TASKS
+def test_tasks_crud_flow(client):
     # Crear tarea
     response = client.post("/tasks/", json={
         "title": "Test task",
